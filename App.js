@@ -12,14 +12,14 @@ app.post("/create_survey",(request,response)=>{
     const name = (request.body.name)
     const gender = (request.body.gender)
     const blood = (request.body.blood)
-    const mobile_no = (request.body.mobile_no)
+    const mobile = (request.body.mobile)
     const pin = (request.body.pin)
 
     response.json({
         "name":name,
         "gender":gender,
         "blood":blood,
-        "mobile":mobile_no,
+        "mobile_no":mobile,
         "pin":pin
     })
 })
